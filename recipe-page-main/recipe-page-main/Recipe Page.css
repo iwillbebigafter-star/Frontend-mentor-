@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    scrollbar-width: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.5s;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+.content {
+    padding: 15px;
+}
+
+h1 {
+    margin: 15px auto;
+    font-family: 'Young Serif';
+    line-height: 30px;
+    font-weight: 400;
+    color: hsl(24, 5%, 18%);
+}
+
+h3 {
+    font-family: 'Young Serif';
+    font-weight: 400;
+    color: hsl(14, 45%, 36%);
+}
+
+h4 {
+    font-family: 'Outfit';
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: hsl(332, 51%, 32%);
+}
+
+p {
+    display: inline;
+    padding: 20px;
+    font-family: 'Outfit-ExtraLight';
+    font-weight: 600;
+    text-align: justify;
+    font-size: 1rem;
+    color: hsl(30, 10%, 34%);
+    padding: 3px;
+}
+
+span {
+    font-family: 'Outfit-Medium';
+    color: hsl(24, 5%, 18%);
+}
+
+ul {
+    padding: 10px;
+}
+
+.Preparation-time {
+    margin-left: 20px;
+}
+
+li {
+    margin: 0px 25px;
+    padding: 5px 15px;
+    font-family: 'Outfit-Light';
+    list-style-type: disc;
+    color: hsl(332, 50%, 32%);
+}
+
+.Ingredients {
+    border-bottom: 1px solid hsl(30, 54%, 90%);
+
+    li {
+        color: hsl(24, 5%, 18%);
+    }
+}
+
+.Instructions {
+    border-bottom: 1px solid hsl(30, 54%, 90%);
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+
+    li {
+        list-style: decimal;
+        font-family: 'Outfit-Bold';
+    }
+
+    p {
+        display: inline;
+    }
+}
+
+.Nutrition {
+    padding: 10px;
+
+    h3 {
+        margin-bottom: 10px;
+    }
+
+    p {
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+}
+
+table {
+    width: 100%;
+    margin-bottom: 50px;
+
+    tr {
+        height: 50px;
+    }
+
+    th {
+        font-family: 'Outfit-ExtraLight';
+        color: hsl(0, 0%, 50%);
+        width: 50%;
+        text-align: left;
+        padding-left: 20px;
+        border-bottom: 1px solid hsl(30, 54%, 90%);
+    }
+
+    td {
+        font-family: 'Outfit-Bold';
+        width: 50%;
+        color: hsl(14, 45%, 36%);
+        border-bottom: 1px solid hsl(30, 54%, 90%);
+    }
+}
+
+.attribution {
+    text-align: center;
+    font-family: 'Outfit';
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+@media (max-width:375px) {
+
+    p {
+        font-size: 1.1rem;
+    }
+
+
+    ul {
+        margin: 30px auto;
+    }
+
+    li {
+        font-weight: 400;
+    }
+
+}
+
+@media (min-width:1440px) {
+    body {
+        background: hsl(30, 54%, 90%);
+    }
+
+    img {
+        height: 100%;
+        width: 90%;
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+    .full-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+        padding: 20px;
+        background: hsl(0, 0%, 100%);
+    }
+
+}
